@@ -13,7 +13,7 @@ class Snake:public Screen{
 
     void set_food(){
         Position t=Position::get_position
-            (rand()%(width-2)+1,rand()%(hight-2)+1);
+            (Position::get_rand()%(width-2)+1,Position::get_rand()%(hight-2)+1);
         if(t.is_equal(food)){
             set_food();
         } else {
