@@ -1,9 +1,10 @@
 #include "tc_snake.cc"
+#include <term.h>
 #include <unistd.h>
 #include <thread>
 #include "user_scanf.cc"
 
-int mian(){
+int main(){
     Snake mysnake("Gluttonous Snake");
     mysnake.snake_wall();
     auto game=[&]{
@@ -12,15 +13,20 @@ int mian(){
             usleep(mysnake.freq);
         }
     };
-    // auto user_scanf=[&]{
-    //     while (mysnake.get_state()) {
-    //         mysnake.set_dir(get_char());
-    //         usleep(mysnake.freq);
-    //     }
-    // };
+    auto user_scanf=[&]{
+        while (mysnake.get_state()) {
+            mysnake.set_dir(get_char());
+            usleep(mysnake.freq);
+        }
+    };
     std::thread thread_game(game);
-    //std::thread thread_scanf(user_scanf);
+    std::thread thread_scanf(user_scanf);
 
-    while(true){}
+    while(true){
+        if(!mysnake.get_state()){
+            sleep(1);
+            return 0;
+        }
+    }
     return 0;
 }

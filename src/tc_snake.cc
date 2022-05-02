@@ -1,5 +1,6 @@
 #include "window.cc"
 #include <cstdlib>
+#include <iostream>
 #include <queue>
 #include <string>
 
@@ -72,6 +73,13 @@ class Snake:public Screen{
             break;
         }
     }
+    void snake_clear(){
+        for(int i=1;i<hight-2;++i){
+            for(int j=1;j<width-2;++j){
+                window[i][j]=' ';
+            }
+        }
+    }
 
 public:
     Snake(std::string):Screen("Gluttonous Sanke")
@@ -98,6 +106,7 @@ public:
         return state;
     }
     void looping_body(){
+        snake_clear();
         update_window(snake, food);
         print();
         walk();

@@ -47,8 +47,9 @@ struct Screen{
         set_width_hight(60, 20);
         window=get_window();
         set_name(str);
-        set_freq(500000);
+        set_freq(100000);
     }
+
     void snake_wall(){
         std::string t(width,'=');
         window[0]=t;
@@ -69,7 +70,7 @@ struct Screen{
         }
         std::cout<<std::endl;
     }
-    void update_window(std::queue<Position>& que,Position food){
+    void update_window(std::queue<Position> que,Position food){
         while (!que.empty()) {
             auto& t=que.front();
             if(!is_legal(t))//////////////////////??????
