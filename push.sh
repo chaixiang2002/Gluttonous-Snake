@@ -1,4 +1,3 @@
 #!/bin/bash
-git add .
-git commit -m "_"
+./commit.sh
 git push -u origin master
