@@ -4,6 +4,8 @@
 
     共于贪吃蛇的实现，由一个窗口（window），一个蛇（snake），多个座标点（Position）以及他们的功能（成员函数）组成
 
+![tu](https://github.com/chaihttps://github.com/chaixiang2002/Gluttonous-Snake/blob/master/image/Screenshot_20220502_151201.pngxiang2002/Gluttonous-Snake/blob/master/image/Screenshot_20220502_151201.png "snake")
+
 ### 如何运行：
 
 环境：ArchLinux
@@ -20,7 +22,7 @@
 
 1. 关于贪吃蛇的控制问题
 
-    - 只支持w、a、s、d、W、A、S、D  4个键，个人能力和精力有限，期待
+    ![1651508593346.png](image/README/1651508593346.png)- 只支持w、a、s、d、W、A、S、D  4个键，个人能力和精力有限，期待
 
 2. 食物是在墙内随机出现问题
 
