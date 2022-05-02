@@ -74,8 +74,8 @@ class Snake:public Screen{
         }
     }
     void snake_clear(){
-        for(int i=1;i<hight-2;++i){
-            for(int j=1;j<width-2;++j){
+        for(int i=1;i<hight-1;++i){
+            for(int j=1;j<width-1;++j){
                 window[i][j]=' ';
             }
         }

@@ -6,6 +6,7 @@
 
 int main(){
     Snake mysnake("Gluttonous Snake");
+    mysnake.set_freq(400000);
     mysnake.snake_wall();
     auto game=[&]{
         while (mysnake.get_state()) {
