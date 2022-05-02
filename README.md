@@ -17,6 +17,9 @@
   2. 输入自己的密码
   3. 设置do.sh的运行权限	`[root@cx src]# chmod 777 do.sh `
   4. 运行脚本				./do.sh
+- 法三（放弃治疗，直接下载我编译好的包）
+  - https://github.com/chaixiang2002/Gluttonous-Snake/releases/download/snake/main.exe
+  - 点击下载，然后运行
 
 ### 不足：
 

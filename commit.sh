@@ -1,3 +1,4 @@
 #!/bin/bash
 git add .
-git commit -m "修复了食物生成不是实时随机的bug"
+# git commit -m "修复了食物生成不是实时随机的bug"
+git commit -m "更新了readme！"
