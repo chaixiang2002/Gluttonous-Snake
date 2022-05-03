@@ -72,7 +72,7 @@ struct Screen{
     }
     void update_window(std::queue<Position> que,Position food){
         while (!que.empty()) {
-            auto& t=que.front();
+            auto t=que.front();
             if(!is_legal(t))//////////////////////??????
                 return;
             window[t.y][t.x]='o';
