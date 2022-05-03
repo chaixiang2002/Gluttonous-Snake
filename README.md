@@ -17,7 +17,7 @@
   2. 输入自己的密码
   3. 设置do.sh的运行权限	`[root@cx src]# chmod 777 do.sh `
   4. 运行脚本				./do.sh
-- 法三（放弃治疗，直接下载我编译好的包）
+- 法三（直接下载我编译好的包）
   - https://github.com/chaixiang2002/Gluttonous-Snake/releases/download/snake/main.exe
   - 点击下载，然后运行
 
@@ -25,8 +25,7 @@
 
 1. 关于贪吃蛇的控制问题
 
-    - 只支持w、a、s、d、W、A、S、D  4个键，个人能力和精力有限，期待
-
+   - 只支持w、a、s、d、W、A、S、D  4个键，个人能力和精力有限，期待
 2. ~~食物是在墙内随机出现问题~~
 
    - ~~可能出现食物生成在蛇身体上，这并不是应该出现的情况~~
